@@ -1,4 +1,8 @@
-@import "./general";
-@import "./variables";
-@import "./fonts";
 @import "./blocks";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.result{
+    height: 500px;
+    font-size: 100px;
+}

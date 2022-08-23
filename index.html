@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Writesmth</title>
 </head>
-<body>
 
+<body>
+    <div class="container">
+        <form class="mt-5 myForm" action="">
+            <div class="row">
+                <div class="col">
+                    <input class="form-control myInput" type="text" id="text" name="amount" required pattern="[0-9]+">
+                    <label class="form-label" for="text"></label>
+                </div>
+                <div class="col">
+                    <select class="form-control mySelect" name="currency" id="currency" required>
+                        <option value="" disabled selected>Currency</option>
+                        <option value="usd">USD</option>
+                        <option value="rub">RUBLE</option>
+                        <option value="eur">EURO</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <button class="btn btn-success w-100 myBtn" type="submit">Click</button>
+                </div>
+                <div class="col-12">
+                    <h1 class="result bg-light d-flex justify-content-center align-items-center flex-shrink-1 rounded-4"></h1>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
